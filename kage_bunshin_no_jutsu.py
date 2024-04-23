@@ -2,7 +2,6 @@
 
 from math import log
 
-teste = int(input())
 casos = []
 while True:
     try:
@@ -15,6 +14,6 @@ for i in casos:
     if i == 1:
         respostas.append(0)
     else:
-        respostas.append(int(log(i, 2)))
+        respostas.append(log(i+1, 2))  # progressão geométrica
 for i in respostas:
-    print(i)
+    print(int(i))
